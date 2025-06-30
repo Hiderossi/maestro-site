@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAESTRO - Insurance Sales Partner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #3ccce6, #f2df68);
+      text-align: center;
+      color: #000;
+    }
+
+    .logo-img {
+      width: 200px;
+      margin: 30px auto 10px;
+      display: block;
+    }
+
+    .subheading {
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 20px 0 30px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      padding: 0 20px 60px;
+      justify-items: center;
+    }
+
+    .menu-button {
+      background: white;
+      border-radius: 24px;
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+      width: 140px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .menu-button:hover {
+      background: #e6f7ff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-button:active {
+      background: #cceeff;
+      transform: translateY(0);
+    }
+
+    @media screen and (max-width: 480px) {
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://raw.githubusercontent.com/Hiderossi/maestro-assets/main/%E3%83%AD%E3%82%B3%E3%82%99350%20%C3%97%2092%20px%20(13).png" alt="MAESTROロゴ" class="logo-img" />
+
+  <div class="subheading">INSURANCE SALES PARTNER</div>
+
+  <div class="section-title">お好きなメニューを選んで下さい</div>
+
+  <div class="menu-grid">
+    <button class="menu-button" onclick="openChat('TOTに営業相談')">TOTに営業相談</button>
+    <button class="menu-button" onclick="openChat('商談場所Search')">商談場所Search</button>
+    <button class="menu-button" onclick="openChat('交流会Search')">交流会Search</button>
+    <button class="menu-button" onclick="openChat('AIフィードバック')">AIフィードバック</button>
+    <button class="menu-button" onclick="openChat('顧客に話せる雑学')">顧客に話せる雑学</button>
+    <button class="menu-button" onclick="openChat('保険業界ニュース')">保険業界ニュース</button>
+  </div>
+
+</body>
+</html>
